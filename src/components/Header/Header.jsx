@@ -25,7 +25,7 @@ const Header = () => {
   },[todoList])
 
   const addTodo = ()=>{
-    if(!editText.match(/^\s+$/) ){
+    if(!editText.match(/^\s*$/) ){
       setTodoList([...todoList, {title:editText, isComplete:false}])
     }
   }
